@@ -4,7 +4,7 @@
   "description": "",
   "main": "asyn_calculator.js",
   "scripts": {
-    "test": "mocha codes/**/*.spec.js",
+    "test": "mocha --reporter progress codes/**/*.spec.js",
     "test:watch":"npm run test -- --watch"
   },
   "keywords": [],
