@@ -1,0 +1,29 @@
+LOGGING
+
+1. console.log is good for development but not good for production.
+2. In production a person can't sit, wait and watch of r error on console. Even someone does, error may scrolloff from screen.
+3. Logging to file is preferred.
+4. Logging using "fs" may block application.
+
+USE WINSTON MODULE
+--
+winston.log('info | warn | error')
+
+Convenience methods
+--
+winston.info
+winton.error
+winston.log
+
+
+
+TRANSPORTS
+---
+1. Winston uses transports
+2. Transports are storage device for logs
+3. Core transport types supported are (console,file,http)
+4. By default Winston uses console.
+5. A logger may have multiple or no transports
+6. add() --> add transport
+7. remove --> remove transport
+8. By default, winston uses winston object(2_file), we can create our own logger see (3_file)
