@@ -1,0 +1,17 @@
+{
+  "name": "tests_demos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "asyn_calculator.js",
+  "scripts": {
+    "test": "mocha codes/**/*.spec.js",
+    "test:watch":"npm run test -- --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2"
+  }
+}

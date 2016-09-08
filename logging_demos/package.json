@@ -1,0 +1,16 @@
+{
+  "name": "logging_demos",
+  "version": "1.0.0",
+  "main": "1_log_winston.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "winston": "^2.2.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}
