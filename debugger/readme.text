@@ -1,0 +1,34 @@
+1. V8 comes with a built in debugger that can be accessed over TCP
+
+2. To access the debugger, Node must be invoked with the debug argument.
+
+>> node debug app.js
+(Interactive debugger)
+
+>> node  app.js --debug
+(debugger listens on port 5858)
+
+>> node  app.js --debug-brk
+(debugger listens on port 5858, also set break point on like 1)
+
+In command line.
+press 'c' -> continue. (this will halt your code just before  debugger)
+to read a variables values, you have to got to REPL, type 'repl' then in REPL console type variable name
+exit REPL by CTRL+C
+
+-----
+This debugger is not user friendly.
+
+3. NODE INSPECTOR: => 3rd party module that allows node's debugger to interface
+with Google Chrome's developer tools in a user-friendly way.
+
+npm install --save node-inspector
+
+>>node --debug-brk app.js
+(--debug-brk, because we don't want to use interactive CLI for debugging)
+
+>>node-inspector
+(type this in separate terminal window, and visit the url it tells you to visit)
+(In chrome, press 'play' button to execute app till next breakpoint)
+(scope variables: it show variables  and their values in current scope)
+(you can press console and then inspect/interact)
