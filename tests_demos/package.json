@@ -5,7 +5,7 @@
   "main": "asyn_calculator.js",
   "scripts": {
     "test": "mocha --reporter progress codes/**/*.spec.js",
-    "test:watch":"npm run test -- --watch"
+    "test:watch": "npm run test -- --watch"
   },
   "keywords": [],
   "author": "",
@@ -13,5 +13,8 @@
   "dependencies": {
     "chai": "^3.5.0",
     "mocha": "^3.0.2"
+  },
+  "devDependencies": {
+    "superagent": "^2.2.0"
   }
 }
