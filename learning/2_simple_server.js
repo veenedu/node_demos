@@ -9,6 +9,11 @@ var server =  http.createServer(function(req,res){
       'Content-Type' : 'text/plain'
     });
 
+    /*
+      request.url
+      request.method => 'GET' || 'POST'
+    */
+
     res.end("Hello World")
 });
 
